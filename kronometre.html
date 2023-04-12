@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kronometre.css">
+
+    <title>Kronometre</title>
+</head>
+<body>
+ 
+    <div id="kronometre" class="kr">
+        <h2> KRONOMETRE </h2>
+    </div>    
+
+    <div class="container">   
+         <h1> <span id="saat">00</span> : <span id="dakika">00</span> : <span id="saniye"> 00</span> </h1>
+        <form>
+            <label> 
+                Saat
+                <input id="secilensaat" type="number" min="0" max="12" value="00">
+            </label>
+            <label>
+                Dakika
+                <input id="secilendk" type="number" min="0" max="59" value="00">
+            </label>
+
+            <label>
+                Saniye
+                <input id="secilensn" type="number" min="0" max="59" value="00">
+            </label>
+        </form>
+        <div class="buton">
+            <button id="baslat">Başlat</button>
+            <button id="sifirla">Sıfırla</button>
+        </div>
+    </div>
+
+     <div class="navbar-menu">
+        <ul class="ul">
+            <li ><a href="index.html" > Ana Sayfa </a></li>
+        </ul>
+     </div>
+     
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

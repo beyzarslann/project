@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Inconsolata:wght@300&family=Lobster&family=Shadows+Into+Light&display=swap');
+
+
+/* .background {
+  background: #000000 url('2.jpg') no-repeat right top;
+
+} */
+
+  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* butonların etrafındaki boşluklar kaldırıldı. */
+  font-weight: bold;
+  
+  
+}
+
+/*background-image:linear-gradient(90deg, lightblue 50%, skyblue 50% );*/
+
+body {
+  overflow: hidden;
+  font-family: "Inconsolata", sans-serif;
+  height: 100vh;
+  background-size: cover;
+  width: 100%; 
+  /* background: rgba(122, 189, 210, 0.842);     */
+  background-image: url("bgg3.jpg");
+}
+
+.container {
+  width: 50%;
+  height: 50%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 25px;
+  float: left;
+  
+  
+}
+
+#secilendk, #secilensn, #secilensaat {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 2.5rem;
+  color: #0878ac;
+  letter-spacing: 4px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+#baslat,
+#sifirla {
+  background-color: #0878ac;
+  color: white;
+  font-size: 25px;
+  width: 15rem;
+  text-align: center;
+  border-radius: 8px;
+  letter-spacing: 5px;
+  font-family: "Inconsolata", sans-serif;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+#baslat:hover {
+  background-color: #5dbbe7
+}
+
+#sifirla:hover {
+  background-color: #5dbbe7
+}
+
+.buton {
+  float: left;
+  margin: 20px;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Inconsolata", sans-serif;
+  color: rgb(8, 52, 79);
+  font-weight: bold;
+}
+
+kr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+.listeler {
+  cursor: pointer;
+  position: relative;
+  right: -40px;
+  font-size: 20px;
+  padding: 12px 10px;
+  transition: 0.2s;
+  margin: 3px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  /* liste ögelerini seçilemez yapmak için */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.addButon {
+  margin: 0;
+  padding: 10px;
+  width: 25%;
+  background: #0878ac;
+  color: aliceblue;
+  float: right;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+  letter-spacing: 1ch;
+
+}
+
+/*Tıkladığında, bir arka plan rengi ekler ve metnin üzerini çizer*/
+ul li.listeler {
+  text-decoration: line-through;
+  background: #5dbbe7;
+  color: aliceblue;
+}
+
+ul li.checked {
+  background: rgb(165, 71, 71);
+  color: #fff;
+  text-decoration: line-through;
+}
+
+
+
+/* kapat düğmesinin stili */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  padding: 12px 16px 12px 16px;
+}
+
+#giris {
+
+  border: none;
+  border-radius: 0;
+  width: 25%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  display: flex;
+  text-align: center;
+  
+
+
+}
+
+/* .listeler:hover {
+  background-color: rgb(156, 153, 135);
+  overflow: auto;
+  resize: both;
+  border: 0px solid;
+  border-radius: 2px;
+  border-color: #0e5576;
+  transition: 0.5s;
+} */
+
+#mylist {
+  margin: 80px;
+  padding: 55px;
+  position: relative;
+  left: 65px;
+  
+}
+
+/* navbar menu */
+
+.navbar-menu {
+  position: fixed; 
+  top:0px; 
+  left:0px; 
+  right:0px; 
+  height:50px;
+  background-color: #34495e;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center ;
+  
+}
+
+ul li {
+  display: inline-block;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul li a:hover {
+  color: #e74c3c;
+}
+
+ul li a::before {
+    content: "{";
+    margin-right: 5px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+ul li a::after {
+    content: "}";
+    margin-left: 5px;
+    opacity: 0;
+    transition: all 0.5s;
+
+}
+
+ul li a:hover:before {
+  opacity: 1;
+  margin-right: 10px;
+}
+
+ul li a:hover:after {
+  opacity: 1;
+  margin-left: 10px;
+}

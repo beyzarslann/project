@@ -1,0 +1,104 @@
+
+*{
+    background-color: rgb(212, 181, 143);
+    /* background-image: url("focus.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+
+.baslik{
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 100px;
+   
+}
+
+h2{
+    word-spacing: 30px;
+    letter-spacing: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+p{
+    word-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 75px;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn{
+    background: none;
+    border: 2px solid #2c3e50;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 150px;
+    margin: 0px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.4s linear;
+}
+
+.btn:hover{
+    color: #fff;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #2c3e50;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+
+}
+
+.basla::before{
+    transform: scaleX(0);
+}
+
+.basla:hover::before{
+    transform: scaleX(1);
+}
+
+.dur::before{
+    transform: scaleY(0);
+}
+
+.dur:hover::before{
+    transform: scaleY(1);
+}
+
+.sifirla::before{
+    transform: scaleX(0);
+}
+
+.sifirla:hover::before{
+    transform: scaleX(1);
+}
+
+.mola::before{
+    transform: scaleY(0);
+}
+
+.mola:hover::before{
+    transform: scaleY(1);
+}
+
+
